@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyro</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"></a>
+        </div>
+        <div class="nav-links">
+            <div>
+                <a href="{{ url_for('index') }}"><i class="fa-solid fa-house"></i>Home</a>
+            </div>
+            <div>
+                <a href="{{ url_for('about') }}"><i class="fa-solid fa-circle-info"></i>About</a>
+            </div>
+            <div>
+                <a href="{{ url_for('memberships') }}">Memberships</a>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Search">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button> 
+        </div>
+        <div class="auth">
+            <button id="SU">Sign Up</button>
+            <button id="LI">Log In</button>
+        </div>
+    </nav>
+    <div class="first-section">
+        <h1>Gyro</h1>
+    </div>
+    <h1>About us</h1>
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <p>Founded in 2010, Gyro Gym has been a staple in the fitness community for over a decade. Our mission is to provide a welcoming and inclusive environment where everyone can achieve their fitness goals. We offer a wide range of classes and equipment to help you stay motivated and inspired. Join us and experience the Gyro difference!</p>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li>made by Umair</li>
+            <li><p>&copy; 2025 Gyro Gym. All rights reserved.</p></li>
+        </ul>
+    </footer>
+</body>
+</html>

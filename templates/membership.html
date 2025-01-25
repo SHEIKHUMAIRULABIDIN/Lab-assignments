@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyro</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"></a>
+        </div>
+        <div class="nav-links">
+            <div>
+                <a href="{{ url_for('index') }}"><i class="fa-solid fa-house"></i>Home</a>
+            </div>
+            <div>
+                <a href="{{ url_for('about') }}"><i class="fa-solid fa-circle-info"></i>About</a>
+            </div>
+            <div>
+                <a href="{{ url_for('memberships') }}">Memberships</a>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Search">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button> 
+        </div>
+        <div class="auth">
+            <button id="SU">Sign Up</button>
+            <button id="LI">Log In</button>
+        </div>
+    </nav>
+
+    <section class="membership-section">
+        <h2>Membership Plans</h2>
+        <div class="plan-container">
+            <div class="plan basic">
+                <h3>Basic</h3>
+                <ul>
+                  <li>Unlimited gym access</li>
+                  <li>Free fitness classes</li>
+                  <li>Access to cardio and weight equipment</li>
+                </ul>
+                <p>Price: $49/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+
+            <div class="plan premium">
+                <h3>Premium</h3>
+                <ul>
+                    <li>Unlimited gym access</li>
+                  <li>Free fitness classes</li>
+                    <li>Access to cardio and weight equipment</li>
+                    <li>Personal training sessions (2 per month)</li>
+                    <li>Access to sauna and steam room</li>
+                </ul>
+                <p>Price: $79/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+
+            <div class="plan vip">
+                <h3>VIP</h3>
+                <ul>
+                    <li>Unlimited gym access</li>
+                    <li>Free fitness classes</li>
+                    <li>Access to cardio and weight equipment</li>
+                    <li>Personal training sessions (4 per month)</li>
+                    <li>Access to sauna, steam room, and pool</li>
+                    <li>Priority booking for classes</li>
+                    <li>10% discount on gym merchandise</li>
+                </ul>
+                <p>Price: $129/month</p>
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+  <footer>
+    <ul>
+        <li><a href="#">contact us</a></li>
+        <li>made by Umair</li>
+        <li><p>&copy; 2023 Gyro Gym. All rights reserved.</p></li>
+    </ul>
+  </footer>
+
+  </body>
+</html>
